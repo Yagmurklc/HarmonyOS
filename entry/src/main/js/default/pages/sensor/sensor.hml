@@ -1,0 +1,36 @@
+<swiper class="container" index="{{index}}">
+    <div class="swiper-item heart-item">
+        <text class="subtitle">Heart Rate</text>
+        <div class="separator" ></div>
+        <image-animator class="animator" ref="animator" images="{{hearts}}" duration="500ms" />
+        <div class="separator" ></div>
+        <text class="subtitle">{{ heartBeatCount }}</text>
+    </div>
+    <div class="swiper-item input-item">
+        <text class="subtitle2">Select your weight</text>
+        <div class="row">
+            <input class="radio" type="radio" id="kg1" name="kg" @click ="saveUserWeight('0.033')" />
+            <text class="subtitle2">45-55</text>
+        </div>
+        <div class="row">
+            <input class="radio" type="radio" id="kg2" name="kg" @click="saveUserWeight('0.038')"/>
+            <text class="subtitle2">56-65</text>
+        </div>
+        <div class="row">
+            <input class="radio" type="radio" id="kg3" name="kg" @click="saveUserWeight('0.044')"/>
+            <text class="subtitle2">66-80</text>
+        </div>
+        <div class="row">
+            <input class="radio" type="radio" id="kg4" name="kg" @click="saveUserWeight('0.068')"/>
+            <text class="subtitle2">81-100</text>
+        </div>
+    </div>
+    <div class="swiper-item step-item">
+        <text class="subtitle2">Step Counter</text>
+        <div class="separator2"></div>
+        <image-animator class="animator2" ref="animator" images="{{steps}}" duration="600ms" />
+        <div class="separator2"></div>
+        <text class="subtitle2">{{ stepCounter }}</text>
+        <input class="button2" type="button" value="Calculate" @click="calculate"/>
+    </div>
+</swiper>

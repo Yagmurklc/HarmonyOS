@@ -1,0 +1,14 @@
+{
+    "appID": "com.harmony.dtse.healthy",
+    "appName": "$string:entry_MainAbility",
+    "versionName": "1.0.0",
+    "versionCode": 1000000,
+    "minPlatformVersion": 4,
+    "pages": [
+        "pages/sensor/sensor",
+        "pages/index/index"
+    ],
+    "deviceType": [
+        "liteWearable"
+    ]
+}
